@@ -1,0 +1,93 @@
+﻿@model Nordea.CodingExercise.Models.ParserViewModel
+@{
+    ViewBag.Title = "Nordea Coding Exercise";
+}
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#parserForm").submit(function () {
+                event.preventDefault();
+                var txtStringToParse = document.getElementById("txtStringToParse").value;
+                if (txtStringToParse.length == 0)
+                {
+                    alert("Please enter some text to parse...");
+                    return false;
+                }
+                document.getElementById("parsedText").innerHTML = '';
+                $.ajax({
+                    url: $(this).attr("action"),
+                    type: "POST",
+                    data: $(this).serialize(),
+                    dataType: "json",
+                    async: true,
+                    success: function (resp) {
+                        document.getElementById("parsedText").appendChild(document.createTextNode(resp));
+                        document.getElementById("parsedText").style.visibility = "visible";
+                    },
+                    error: function () {
+                        alert("Error occured while parsing...");
+                    }
+                });
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h2>String Parsing Coding Exercise</h2>
+            <table>
+                <tr>
+                    <td width="50%" align="justify">
+                        <form method="post" id="parserForm" action="/home/Parse">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            @Html.LabelFor(model => model.TextToParse)
+                                        </b>
+                                    </td>
+                                    <td>
+                                        @Html.TextAreaFor(model => model.TextToParse, new { id = "txtStringToParse", style = "width:400px;height:100px;resize:none" })
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>
+                                            @Html.LabelFor(model => model.Parsers)
+                                        </b>
+                                    </td>
+                                    <td>
+                                        @Html.DropDownListFor(model => model.Parsers, new SelectList(Model.Parsers), new { id = "drpParser", style = "width:400px;height:30px" })
+                                    </td>
+                                </tr>
+                                <tr style="margin-top: 200px" align="right">
+                                    <td colspan="2">
+                                        <button type="submit" id="btnSubmit" style="height: 30px; width: 400px;">Parse</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </td>
+                    <td width="50%">
+                        <table>
+                            <tr>
+                                <td>
+                                    <b>
+                                        @Html.LabelFor(model => model.ParsedText)
+                                    </b>
+                                </td>
+                            </tr>
+                        </table>
+                        <pre lang="xml" id="parsedText" style="height: 200px; width: 500px; overflow-x: scroll; overflow-y:scroll; visibility:hidden"></pre>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

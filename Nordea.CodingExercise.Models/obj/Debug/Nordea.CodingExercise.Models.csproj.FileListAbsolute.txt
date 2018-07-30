@@ -1,0 +1,5 @@
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Models\bin\Debug\Nordea.CodingExercise.Models.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Models\bin\Debug\Nordea.CodingExercise.Models.pdb
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Models\obj\Debug\Nordea.CodingExercise.Models.csprojResolveAssemblyReference.cache
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Models\obj\Debug\Nordea.CodingExercise.Models.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Models\obj\Debug\Nordea.CodingExercise.Models.pdb

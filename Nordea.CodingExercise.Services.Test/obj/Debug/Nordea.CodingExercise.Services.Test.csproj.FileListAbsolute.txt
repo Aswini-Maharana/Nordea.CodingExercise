@@ -1,0 +1,13 @@
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Services.Test.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Services.Test.pdb
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Parsers.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Services.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Models.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Parsers.pdb
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Services.pdb
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\bin\Debug\Nordea.CodingExercise.Models.pdb
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\obj\Debug\Nordea.CodingExercise.Services.Test.csprojResolveAssemblyReference.cache
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\obj\Debug\Nordea.CodingExercise.Services.Test.dll
+D:\Programming\Nordea.CodingExercise\Nordea.CodingExercise.Services.Test\obj\Debug\Nordea.CodingExercise.Services.Test.pdb
